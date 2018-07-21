@@ -5,7 +5,14 @@
 layout: home
 ---
 
-OpenIndexMaps is a community and format for sharing [index maps](https://en.wikipedia.org/wiki/Index_map).
+<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+  <div class="col-md-5 p-lg-5 mx-auto">
+    <h1 class="display-4">OpenIndexMaps</h1>
+    <p class="lead">
+      A community and format for sharing <a href="https://en.wikipedia.org/wiki/Index_map">index maps</a>.
+    </p>
+  </div>
+</div>
 
 <img src="index_map.jpg" width="240">
 
@@ -81,6 +88,7 @@ OpenIndexMaps should be valid GeoJSON.
 
 These properties represent key and value pair members of a GeoJSON `Feature` represented in an OpenIndexMap. Each property (JSON key) is case sensitive and should be represented in "camel case" format.
 
+{:.table}
 Property | Type | Required? | Description | Example
 -------- | ---- | --------- | ----------- | -------
 `"available"`| `boolean` | no | Determines whether or not this represented area is available. | `true`
