@@ -4,3 +4,8 @@
 
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+#converted {
+  max-height: 800px;
+  overflow-y: scroll;
+}

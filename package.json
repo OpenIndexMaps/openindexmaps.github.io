@@ -4,9 +4,20 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.1.2"
+    "bootstrap": "^4.1.2",
+    "pretty-json-stringify": "0.0.2",
+    "prettyjson": "^1.2.1",
+    "shpjs": "^3.4.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.1.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
