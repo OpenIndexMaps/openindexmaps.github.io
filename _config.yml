@@ -30,3 +30,5 @@ sass:
   load_paths:
     - _sass
     - node_modules
+keep_files:
+  - assets/javascripts/bundle.js
