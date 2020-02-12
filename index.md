@@ -24,6 +24,10 @@ OpenIndexMaps use the [GeoJSON Format](https://tools.ietf.org/html/rfc7946) to d
 - 1\. Introduction
   - 1.1 Examples
 - 2\. Common Properties
+- 3\. Helpful resources
+  - 3.1 Converter
+  - 3.2 Tutorial
+
 
 ## 1. Introduction
 
@@ -100,3 +104,14 @@ Property | Type | Required? | Description | Example
 `"label"` | `string` | no | A short label that represents the item within the discovery aid. Often times this can be a "sheet number" for paper maps. | `"L-16"`
 `"title"` | `string` | no | A title for the given item. Usually longer than the `label`. Sometimes the label is included in this title. | `"Tōa yochizu -- 東亞輿地圖 -- L-16"`
 `"note"` | `string` | no | Additional information that should be presented to the user | `"This item is really interesting."`
+
+## 3. Helpful Resources
+
+### 3.1 Converter
+
+A [converter](https://openindexmaps.org/converter) is available for converting shapefile index maps to OpenIndexMaps GeoJSON.
+
+### 3.2 Tutorial
+
+A [Creating GeoJSON for OpenIndexMaps](https://kgjenkins.github.io/openindexmaps-workshop/) tutorial was created for a workshop at Geo4LibCamp 2020.  The tutorial works through several examples of using QGIS to create OpenIndexMaps GeoJSON files.
+
