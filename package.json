@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "bootstrap": "^4.1.2",
+    "bootstrap": "^4.3.1",
     "pretty-json-stringify": "0.0.2",
     "prettyjson": "^1.2.1",
     "shpjs": "^3.4.2"
