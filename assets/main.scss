@@ -5,6 +5,11 @@
 @import 'variables';
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 
+td, th {
+  border: 1px solid #ccc;
+  padding:3px 0.5em;
+}
+
 #converted {
   max-height: 800px;
   overflow-y: scroll;

@@ -166,7 +166,7 @@ Whenever possible, URLs should use HTTPS and websites should serve with CORS (Cr
 
 The following element names are recommended for use in GIS index map attribute tables. All elements are optional. Element names beyond those listed in the tables below are at the discretion of each institution. Empty elements should be omitted.
 
-**TABLE 1: Elements pertaining to both map sheets and air photo frames**
+### TABLE 1: Elements pertaining to both map sheets and air photo frames
 
 | ELEMENT   | USED FOR                         | TYPE            | DESCRIPTION                                                                                                                       | EXAMPLE                 |
 |-----------|----------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------------------|
@@ -185,7 +185,7 @@ The following element names are recommended for use in GIS index map attribute t
 
 \* See “Converting geospatial data to OpenIndexMap GeoJSON format” section below.
 
-**TABLE 2: Elements pertaining to map sheets only**
+### TABLE 2: Elements pertaining to map sheets only
 
 | ELEMENT    | USED FOR             | TYPE    | DESCRIPTION                                                                                                            | EXAMPLE                        |
 |------------|----------------------|---------|------------------------------------------------------------------------------------------------------------------------|--------------------------------|
@@ -206,7 +206,7 @@ The following element names are recommended for use in GIS index map attribute t
 | bathInterv | Bathymetric interval | string  | Distance between bathymetric contour lines.  Include unit (or abbreviation)                                            | 200 m                          |
 | primeMer   | Prime Meridian       | string  | Indicates a prime meridian other than Greenwich                                                                        | Ferro                          |
 
-**TABLE 3: Elements pertaining to air photo frames only**
+### TABLE 3: Elements pertaining to air photo frames only
 
 | ELEMENT   | USED FOR      | TYPE    | DESCRIPTION                                                    | EXAMPLE        |
 |-----------|---------------|---------|----------------------------------------------------------------|----------------|
@@ -215,7 +215,7 @@ The following element names are recommended for use in GIS index map attribute t
 | rectificn | Rectification | string  | Any corrections done to adjust the air photo image             | orthorectified |
 | rollNo    | Roll number   | string  | Identifier for the film reel from which the air photo comes    |                |
 
-**TABLE 4: Elements for entering metadata pertaining to a specific institution only**
+### TABLE 4: Elements for entering metadata pertaining to a specific institution only
 
 | ELEMENT    | USED FOR          | TYPE    | DESCRIPTION                                                                                                                                                 | EXAMPLE                  |
 |------------|-------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
@@ -241,11 +241,11 @@ While metadata pertaining to individual map sheets or air photo frames are recor
 
 ### Boolean conventions for conversion
 
-“true” “false” should be converted in a converter
+`true` `false` should be converted in a converter
 
 ### Array conventions for conversion
 
-“|” should be used as a delimiter for creation of data string data that should be converted to an array.
+`|` should be used as a delimiter for creation of data string data that should be converted to an array.
 
 ## Uploading to OpenIndexMaps
 
