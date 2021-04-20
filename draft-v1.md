@@ -257,28 +257,16 @@ To upload your index maps to OpenIndexMaps, contact <mark>[contact info]</mark> 
 
 The following individuals contributed to the development of these requirements and recommendations:
 
-Stephen Appel (University of Wisconsin Milwaukee) [srappel@uwm.edu](mailto:srappel@uwm.edu)
-
-Tom Brittnacher (University of California Santa Barbara) [tombritt@ucsb.edu](mailto:tombritt@ucsb.edu)
-
-Kim Durante (Stanford University) [kdurante@stanford.edu](mailto:kdurante@stanford.edu)
-
-Dave Hendlin (University of California Santa Barbara) [dhendlin@ucsb.edu](mailto:dhendlin@ucsb.edu)
-
-Taylor Hixson (New York University) [twh2@nyu.edu](mailto:twh2@nyu.edu)
-
-Keith Jenkins (Cornell University) [kgj2@cornell.edu](mailto:kgj2@cornell.edu)
-
-Stace Maples (Stanford University) [stacemaples@stanford.edu](mailto:stacemaples@stanford.edu)
-
-David Medeiros (Stanford University) [davidmed@stanford.edu](mailto:davidmed@stanford.edu)
-
-Susan Powell (University of California Berkeley) [smpowell@berkeley.edu](mailto:smpowell@berkeley.edu)
-
-Jack Reed (Stanford University) [pjreed@stanford.edu](mailto:pjreed@stanford.edu)
-
-Evan Thornberry (University of British Columbia) [evan.thornberry@ubc.ca](mailto:evan.thornberry@ubc.ca)
-
-Phil White (University of Colorado Boulder) [philip.white@colorado.edu](mailto:philip.white@colorado.edu)
-
-Amy Work (University of California San Diego) [awork@ucsd.edu](mailto:awork@ucsd.edu)
+- Stephen Appel (University of Wisconsin Milwaukee) [srappel@uwm.edu](mailto:srappel@uwm.edu)
+- Tom Brittnacher (University of California Santa Barbara) [tombritt@ucsb.edu](mailto:tombritt@ucsb.edu)
+- Kim Durante (Stanford University) [kdurante@stanford.edu](mailto:kdurante@stanford.edu)
+- Dave Hendlin (University of California Santa Barbara) [dhendlin@ucsb.edu](mailto:dhendlin@ucsb.edu)
+- Taylor Hixson (New York University) [twh2@nyu.edu](mailto:twh2@nyu.edu)
+- Keith Jenkins (Cornell University) [kgj2@cornell.edu](mailto:kgj2@cornell.edu)
+- Stace Maples (Stanford University) [stacemaples@stanford.edu](mailto:stacemaples@stanford.edu)
+- David Medeiros (Stanford University) [davidmed@stanford.edu](mailto:davidmed@stanford.edu)
+- Susan Powell (University of California Berkeley) [smpowell@berkeley.edu](mailto:smpowell@berkeley.edu)
+- Jack Reed (Stanford University) [pjreed@stanford.edu](mailto:pjreed@stanford.edu)
+- Evan Thornberry (University of British Columbia) [evan.thornberry@ubc.ca](mailto:evan.thornberry@ubc.ca)
+- Phil White (University of Colorado Boulder) [philip.white@colorado.edu](mailto:philip.white@colorado.edu)
+- Amy Work (University of California San Diego) [awork@ucsd.edu](mailto:awork@ucsd.edu)
