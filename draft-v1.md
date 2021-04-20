@@ -1,7 +1,7 @@
 ---
-layout: home
+layout: default
 ---
-</br>
+
 
 # GIS Index Map Creation
 ## Requirements and Recommendations
@@ -168,615 +168,70 @@ The following element names are recommended for use in GIS index map attribute t
 
 **TABLE 1: Elements pertaining to both map sheets and air photo frames**
 
-<table>
-  <tr>
-   <th>ELEMENT
-   </th>
-   <th>USED FOR
-   </th>
-   <th>TYPE
-   </th>
-   <th>DESCRIPTION
-   </th>
-   <th>EXAMPLE
-   </th>
-  </tr>
-  <tr>
-   <td>label
-   </td>
-   <td>Sheet/frame no.
-   </td>
-   <td>string
-   </td>
-   <td>Alphanumeric code identifying the sheet or frame. The value of this field is used as a tool tip in GeoBlacklight.
-   </td>
-   <td>L-16
-   </td>
-  </tr>
-  <tr>
-   <td>labelAlt
-   </td>
-   <td>Alternate sheet/frame no.
-   </td>
-   <td>string
-   </td>
-   <td>Alphanumeric code for the sheet or frame that was used for previous or subsequent editions, or for when there are multiple labels
-   </td>
-   <td>NW8
-   </td>
-  </tr>
-  <tr>
-   <td>labelAlt2
-   </td>
-   <td>Second alternate sheet/frame no.
-   </td>
-   <td>string
-   </td>
-   <td>Alphanumeric code for the sheet or frame when there are multiple labels
-   </td>
-   <td>C17
-   </td>
-  </tr>
-  <tr>
-   <td>datePub
-   </td>
-   <td>Publication date
-   </td>
-   <td>string
-   </td>
-   <td>The date that the sheet or frame was published or made available
-   </td>
-   <td>1978-08
-   </td>
-  </tr>
-  <tr>
-   <td>date
-   </td>
-   <td>Date
-   </td>
-   <td>string
-   </td>
-   <td>Used when no other date field is relevant
-   </td>
-   <td>1978
-   </td>
-  </tr>
-  <tr>
-   <td>west
-   </td>
-   <td>Westernmost longitude
-   </td>
-   <td>number
-   </td>
-   <td>Farthest west extent of the sheet/frame bounding box (using the Greenwich Meridian)
-   </td>
-   <td>-112.32645
-   </td>
-  </tr>
-  <tr>
-   <td>east
-   </td>
-   <td>Easternmost longitude
-   </td>
-   <td>number
-   </td>
-   <td>Farthest east extent of the sheet/frame bounding box (using the Greenwich Meridian)
-   </td>
-   <td>-108.32555
-   </td>
-  </tr>
-  <tr>
-   <td>north
-   </td>
-   <td>Northernmost latitude
-   </td>
-   <td>number
-   </td>
-   <td>Farthest north extent of the sheet/frame bounding box
-   </td>
-   <td>38.7221
-   </td>
-  </tr>
-  <tr>
-   <td>south
-   </td>
-   <td>Southernmost latitude
-   </td>
-   <td>number
-   </td>
-   <td>Farthest south extent of the sheet/frame bounding box
-   </td>
-   <td>30.4656
-   </td>
-  </tr>
-  <tr>
-   <td>location
-   </td>
-   <td>Location
-   </td>
-   <td>array[String]*
-   </td>
-   <td>Geographic place name identifying the area covered by the map sheet or air photo frame
-   </td>
-   <td>[“Fresno”, “Clovis”]
-   </td>
-  </tr>
-  <tr>
-   <td>scale
-   </td>
-   <td>Scale
-   </td>
-   <td>string
-   </td>
-   <td>Scale statement (representative fraction plus qualifiers) of the individual sheet/frame
-   </td>
-   <td>approximately 1:250,000
-   </td>
-  </tr>
-  <tr>
-   <td>color
-   </td>
-   <td>Color, b&w, infrared
-   </td>
-   <td>string
-   </td>
-   <td>Indicates whether the sheet/frame is color, black and white, color infrared or another color type
-   </td>
-   <td>Color, Black and white
-   </td>
-  </tr>
-</table>
+| ELEMENT   | USED FOR                         | TYPE            | DESCRIPTION                                                                                                                       | EXAMPLE                 |
+|-----------|----------------------------------|-----------------|-----------------------------------------------------------------------------------------------------------------------------------|-------------------------|
+| label     | Sheet/frame no.                  | string          | Alphanumeric code identifying the sheet or frame. The value of this field is used as a tool tip in GeoBlacklight.                 | L-16                    |
+| labelAlt  | Alternate sheet/frame no.        | string          | Alphanumeric code for the sheet or frame that was used for previous or subsequent editions, or for when there are multiple labels | NW8                     |
+| labelAlt2 | Second alternate sheet/frame no. | string          | Alphanumeric code for the sheet or frame when there are multiple labels                                                           | C17                     |
+| datePub   | Publication date                 | string          | The date that the sheet or frame was published or made available                                                                  | 1978-08                 |
+| date      | Date                             | string          | Used when no other date field is relevant                                                                                         | 1978                    |
+| west      | Westernmost longitude            | number          | Farthest west extent of the sheet/frame bounding box (using the Greenwich Meridian)                                               | -112.32645              |
+| east      | Easternmost longitude            | number          | Farthest east extent of the sheet/frame bounding box (using the Greenwich Meridian)                                               | -108.32555              |
+| north     | Northernmost latitude            | number          | Farthest north extent of the sheet/frame bounding box                                                                             | 38.7221                 |
+| south     | Southernmost latitude            | number          | Farthest south extent of the sheet/frame bounding box                                                                             | 30.4656                 |
+| location  | Location                         | array[String]*  | Geographic place name identifying the area covered by the map sheet or air photo frame                                            | [“Fresno”, “Clovis”]    |
+| scale     | Scale                            | string          | Scale statement (representative fraction plus qualifiers) of the individual sheet/frame                                           | approximately 1:250,000 |
+| color     | Color, b&w, infrared             | string          | Indicates whether the sheet/frame is color, black and white, color infrared or another color type                                 | Color, Black and white  |
 
 \* See “Converting geospatial data to OpenIndexMap GeoJSON format” section below.
 
 **TABLE 2: Elements pertaining to map sheets only**
 
-<table>
-  <tr>
-  <th>ELEMENT
-  </th>
-  <th>USED FOR
-  </th>
-  <th>TYPE
-  </th>
-  <th>DESCRIPTION
-  </th>
-  <th>EXAMPLE
-  </th>
-  </tr>
-  <tr>
-   <td>title
-   </td>
-   <td>Sheet name
-   </td>
-   <td>string
-   </td>
-   <td>Title of map, usually a geographic location on that sheet
-   </td>
-   <td>Santiago
-   </td>
-  </tr>
-  <tr>
-   <td>titleAlt
-   </td>
-   <td>Alternate sheet name
-   </td>
-   <td>string
-   </td>
-   <td>Alternate title for the sheet that was used for previous or subsequent editions, or for when there are multiple titles
-   </td>
-   <td>Rio Branco
-   </td>
-  </tr>
-  <tr>
-   <td>dateSurvey
-   </td>
-   <td>Survey date
-   </td>
-   <td>string
-   </td>
-   <td>Date that the map sheet was surveyed
-   </td>
-   <td>1957
-   </td>
-  </tr>
-  <tr>
-   <td>datePhoto
-   </td>
-   <td>Photocorrected date
-   </td>
-   <td>string
-   </td>
-   <td>Date that the map sheet was photocorrected
-   </td>
-   <td>1966
-   </td>
-  </tr>
-  <tr>
-   <td>dateReprnt
-   </td>
-   <td>Reprint date
-   </td>
-   <td>string
-   </td>
-   <td>Date that the map sheet was reprinted
-   </td>
-   <td>1972
-   </td>
-  </tr>
-  <tr>
-   <td>overprint
-   </td>
-   <td>Overprint
-   </td>
-   <td>string
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>edition
-   </td>
-   <td>Edition
-   </td>
-   <td>string
-   </td>
-   <td>Statement indicating the edition of the map sheet
-   </td>
-   <td>3rd edition
-   </td>
-  </tr>
-  <tr>
-   <td>publisher
-   </td>
-   <td>Publisher
-   </td>
-   <td>string
-   </td>
-   <td>Publisher of the individual sheet (can be used if publishers vary within a map set)
-   </td>
-   <td>Conselho Nacional de Geografia
-   </td>
-  </tr>
-  <tr>
-   <td>overlays
-   </td>
-   <td>Overlays
-   </td>
-   <td>string
-   </td>
-   <td>
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>projection
-   </td>
-   <td>Projection
-   </td>
-   <td>string
-   </td>
-   <td>The map’s or photo’s projection, coordinate system and datum
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>lcCallNo
-   </td>
-   <td>LC Call Number
-   </td>
-   <td>string
-   </td>
-   <td>Library of Congress call number
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>contLines
-   </td>
-   <td>Contour lines
-   </td>
-   <td>boolean
-   </td>
-   <td>Indication of whether or not there are contour lines on the map
-   </td>
-   <td>true / false
-   </td>
-  </tr>
-  <tr>
-   <td>contInterv
-   </td>
-   <td>Contour interval
-   </td>
-   <td>string
-   </td>
-   <td>Distance between contour lines.  Include unit (or abbreviation).
-   </td>
-   <td>200 m
-   </td>
-  </tr>
-  <tr>
-   <td>bathLines
-   </td>
-   <td>Bathymetric lines
-   </td>
-   <td>boolean
-   </td>
-   <td>Indication of whether or not there are bathymetric contour lines on the map
-   </td>
-   <td>true / false
-   </td>
-  </tr>
-  <tr>
-   <td>bathInterv
-   </td>
-   <td>Bathymetric interval
-   </td>
-   <td>string
-   </td>
-   <td>Distance between bathymetric contour lines.  Include unit (or abbreviation)
-   </td>
-   <td>200 m
-   </td>
-  </tr>
-  <tr>
-   <td>primeMer
-   </td>
-   <td>Prime Meridian
-   </td>
-   <td>string
-   </td>
-   <td>Indicates a prime meridian other than Greenwich
-   </td>
-   <td>Ferro
-   </td>
-  </tr>
-</table>
+| ELEMENT    | USED FOR             | TYPE    | DESCRIPTION                                                                                                            | EXAMPLE                        |
+|------------|----------------------|---------|------------------------------------------------------------------------------------------------------------------------|--------------------------------|
+| title      | Sheet name           | string  | Title of map, usually a geographic location on that sheet                                                              | Santiago                       |
+| titleAlt   | Alternate sheet name | string  | Alternate title for the sheet that was used for previous or subsequent editions, or for when there are multiple titles | Rio Branco                     |
+| dateSurvey | Survey date          | string  | Date that the map sheet was surveyed                                                                                   | 1957                           |
+| datePhoto  | Photocorrected date  | string  | Date that the map sheet was photocorrected                                                                             | 1966                           |
+| dateReprnt | Reprint date         | string  | Date that the map sheet was reprinted                                                                                  | 1972                           |
+| overprint  | Overprint            | string  |                                                                                                                        |                                |
+| edition    | Edition              | string  | Statement indicating the edition of the map sheet                                                                      | 3rd edition                    |
+| publisher  | Publisher            | string  | Publisher of the individual sheet (can be used if publishers vary within a map set)                                    | Conselho Nacional de Geografia |
+| overlays   | Overlays             | string  |                                                                                                                        |                                |
+| projection | Projection           | string  | The map’s or photo’s projection, coordinate system and datum                                                           |                                |
+| lcCallNo   | LC Call Number       | string  | Library of Congress call number                                                                                        |                                |
+| contLines  | Contour lines        | boolean | Indication of whether or not there are contour lines on the map                                                        | true / false                   |
+| contInterv | Contour interval     | string  | Distance between contour lines.  Include unit (or abbreviation).                                                       | 200 m                          |
+| bathLines  | Bathymetric lines    | boolean | Indication of whether or not there are bathymetric contour lines on the map                                            | true / false                   |
+| bathInterv | Bathymetric interval | string  | Distance between bathymetric contour lines.  Include unit (or abbreviation)                                            | 200 m                          |
+| primeMer   | Prime Meridian       | string  | Indicates a prime meridian other than Greenwich                                                                        | Ferro                          |
 
 **TABLE 3: Elements pertaining to air photo frames only**
 
-<table>
-  <tr>
-   <td>ELEMENT
-   </td>
-   <td>USED FOR
-   </td>
-   <td>TYPE
-   </td>
-   <td>DESCRIPTION
-   </td>
-   <td>EXAMPLE
-   </td>
-  </tr>
-  <tr>
-   <td>photomos
-   </td>
-   <td>Photomosaic
-   </td>
-   <td>Boolean
-   </td>
-   <td>Indication that the image is a mosaic of several air photos
-   </td>
-   <td>true / false
-   </td>
-  </tr>
-  <tr>
-   <td>bands
-   </td>
-   <td>Bands
-   </td>
-   <td>string
-   </td>
-   <td>Spectral bands present (near infrared, red, green, blue, etc.)
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>rectificn
-   </td>
-   <td>Rectification
-   </td>
-   <td>string
-   </td>
-   <td>Any corrections done to adjust the air photo image
-   </td>
-   <td>orthorectified
-   </td>
-  </tr>
-  <tr>
-   <td>rollNo
-   </td>
-   <td>Roll number
-   </td>
-   <td>string
-   </td>
-   <td>Identifier for the film reel from which the air photo comes
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
+| ELEMENT   | USED FOR      | TYPE    | DESCRIPTION                                                    | EXAMPLE        |
+|-----------|---------------|---------|----------------------------------------------------------------|----------------|
+| photomos  | Photomosaic   | Boolean | Indication that the image is a mosaic of several air photos    | true / false   |
+| bands     | Bands         | string  | Spectral bands present (near infrared, red, green, blue, etc.) |                |
+| rectificn | Rectification | string  | Any corrections done to adjust the air photo image             | orthorectified |
+| rollNo    | Roll number   | string  | Identifier for the film reel from which the air photo comes    |                |
 
 **TABLE 4: Elements for entering metadata pertaining to a specific institution only**
 
-<table>
-  <tr>
-   <td>ELEMENT
-   </td>
-   <td>USED FOR
-   </td>
-   <td>TYPE
-   </td>
-   <td>DESCRIPTION
-   </td>
-   <td>EXAMPLE
-   </td>
-  </tr>
-  <tr>
-   <td>inst
-   </td>
-   <td>Institution
-   </td>
-   <td>string
-   </td>
-   <td>Local institution holding material
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>sheetId
-   </td>
-   <td>Sheet ID
-   </td>
-   <td>string
-   </td>
-   <td>Local institutions’s unique identifier for the sheet/frame
-   </td>
-   <td>G103 U51 1970 S-34
-   </td>
-  </tr>
-  <tr>
-   <td>available
-   </td>
-   <td>Available
-   </td>
-   <td>boolean
-   </td>
-   <td>Indication if the institution holds the item at this location in any format
-   </td>
-   <td>true,
-<p>
-false
-   </td>
-  </tr>
-  <tr>
-   <td>physHold
-   </td>
-   <td>Physical holdings
-   </td>
-   <td>string
-   </td>
-   <td>Indication if the institution holds the item in a physical format, or a link to information about the physical object
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>digHold
-   </td>
-   <td>Digital holdings
-   </td>
-   <td>string
-   </td>
-   <td>Indication if the institution holds the item in a digital format, or a link to information about the digital object, or a link to the digital object itself
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>instCallNo
-   </td>
-   <td>Local call number
-   </td>
-   <td>string
-   </td>
-   <td>Call number used locally (other than Library of Congress call number)
-   </td>
-   <td>3200s 250 u5
-   </td>
-  </tr>
-  <tr>
-   <td>recId
-   </td>
-   <td>Record identifier
-   </td>
-   <td>string
-   </td>
-   <td>Local institution’s unique identifier for the digital object
-   </td>
-   <td>yr314gw9982
-   </td>
-  </tr>
-  <tr>
-   <td>download
-   </td>
-   <td>Download URL
-   </td>
-   <td>string
-   </td>
-   <td>Link used to directly download the digital object
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>websiteUrl
-   </td>
-   <td>Website URL
-   </td>
-   <td>string
-   </td>
-   <td>Link used to direct users to a website with metadata or a download link for the digital object
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>thumbUrl
-   </td>
-   <td>Thumbnail URL
-   </td>
-   <td>string
-   </td>
-   <td>Link used to access the thumbnail for the digital object
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>iiifUrl
-   </td>
-   <td>IIIF URL
-   </td>
-   <td>string
-   </td>
-   <td>Link used to access the digital image using IIIF
-   </td>
-   <td>
-   </td>
-  </tr>
-  <tr>
-   <td>fileName
-   </td>
-   <td>File name
-   </td>
-   <td>string
-   </td>
-   <td>Digital file associated with sheet/frame
-   </td>
-   <td>6840s_100_r8_e-49-63.tif
-   </td>
-  </tr>
-  <tr>
-   <td>note
-   </td>
-   <td>Notes
-   </td>
-   <td>string
-   </td>
-   <td>Free text for local comments as well as general notes applying to everyone’s copy
-   </td>
-   <td>
-   </td>
-  </tr>
-</table>
+| ELEMENT    | USED FOR          | TYPE    | DESCRIPTION                                                                                                                                                 | EXAMPLE                  |
+|------------|-------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| inst       | Institution       | string  | Local institution holding material                                                                                                                          |                          |
+| sheetId    | Sheet ID          | string  | Local institutions’s unique identifier for the sheet/frame                                                                                                  | G103 U51 1970 S-34       |
+| available  | Available         | boolean | Indication if the institution holds the item at this location in any format                                                                                 | true,  false             |
+| physHold   | Physical holdings | string  | Indication if the institution holds the item in a physical format, or a link to information about the physical object                                       |                          |
+| digHold    | Digital holdings  | string  | Indication if the institution holds the item in a digital format, or a link to information about the digital object, or a link to the digital object itself |                          |
+| instCallNo | Local call number | string  | Call number used locally (other than Library of Congress call number)                                                                                       | 3200s 250 u5             |
+| recId      | Record identifier | string  | Local institution’s unique identifier for the digital object                                                                                                | yr314gw9982              |
+| download   | Download URL      | string  | Link used to directly download the digital object                                                                                                           |                          |
+| websiteUrl | Website URL       | string  | Link used to direct users to a website with metadata or a download link for the digital object                                                              |                          |
+| thumbUrl   | Thumbnail URL     | string  | Link used to access the thumbnail for the digital object                                                                                                    |                          |
+| iiifUrl    | IIIF URL          | string  | Link used to access the digital image using IIIF                                                                                                            |                          |
+| fileName   | File name         | string  | Digital file associated with sheet/frame                                                                                                                    | 6840s_100_r8_e-49-63.tif |
+| note       | Notes             | string  | Free text for local comments as well as general notes applying to everyone’s copy                                                                           |                          |
 
 ## Set- and Flight-level Metadata
 
