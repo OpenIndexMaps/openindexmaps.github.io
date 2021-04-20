@@ -29,6 +29,10 @@ DRAFT April 2021
   * [14. Dates](#14-dates)
   * [15. Websites](#15-websites)
 - [Element Names](#element-names)
+  * [Table 1: Elements pertaining to both map sheets and air photo frames](#table-1-elements-pertaining-to-both-map-sheets-and-air-photo-frames)
+  * [Table 2: Elements pertaining to map sheets only](#table-2-elements-pertaining-to-map-sheets-only)
+  * [Table 3: Elements pertaining to air photo frames only](#table-3-elements-pertaining-to-air-photo-frames-only)
+  * [Table 4: Elements for entering metadata pertaining to a specific institution only](#table-4-elements-for-entering-metadata-pertaining-to-a-specific-institution-only)
 - [Set- and Flight-level Metadata](#set--and-flight-level-metadata)
 - [Converting geospatial data to OpenIndexMap GeoJSON format](#converting-geospatial-data-to-openindexmap-geojson-format)
   * [Boolean conventions for conversion](#boolean-conventions-for-conversion)
@@ -183,7 +187,7 @@ The following element names are recommended for use in GIS index map attribute t
 | scale     | Scale                            | string          | Scale statement (representative fraction plus qualifiers) of the individual sheet/frame                                           | approximately 1:250,000 |
 | color     | Color, b&w, infrared             | string          | Indicates whether the sheet/frame is color, black and white, color infrared or another color type                                 | Color, Black and white  |
 
-\* See “Converting geospatial data to OpenIndexMap GeoJSON format” section below.
+\* See [Converting geospatial data to OpenIndexMap GeoJSON format](converting-geospatial-data-to-openindexmap-geojson-format) section below.
 
 ### TABLE 2: Elements pertaining to map sheets only
 
