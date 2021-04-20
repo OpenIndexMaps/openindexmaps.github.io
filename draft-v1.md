@@ -1,3 +1,8 @@
+---
+layout: home
+---
+</br>
+
 # GIS Index Map Creation
 ## Requirements and Recommendations
 
