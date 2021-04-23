@@ -245,7 +245,7 @@ While metadata pertaining to individual map sheets or air photo frames are recor
 
 ### Boolean conventions for conversion
 
-`true` `false` should be converted in a converter
+`true` `false` should be converted in a converter. 
 
 ### Array conventions for conversion
 
@@ -255,7 +255,9 @@ While metadata pertaining to individual map sheets or air photo frames are recor
 
 Institutions can contribute to OpenIndexMaps by uploading their own index maps here: [https://github.com/OpenIndexMaps](https://github.com/OpenIndexMaps)
 
-To upload your index maps to OpenIndexMaps, contact <mark>[contact info]</mark> to have a repository created for your institution. Please provide the GitHub user account which will be the primary user of your repository. Once created you can add your files using Git, GitHub Desktop, or by dragging and dropping files from your computer to your repository using your web browser.
+To upload your index maps to OpenIndexMaps, please [submit an Issue](https://github.com/OpenIndexMaps/openindexmaps.github.io/issues) to have a repository created for your institution. In your Issue description, provide the GitHub user account which will be the primary user of your repository, and the URL for your institution. Once created, you can add your files using Git, GitHub Desktop, or by dragging and dropping files from your computer to your repository using your web browser.
+
+Files uploaded to your institutions repository should be stored in folders named to reflect the sepcification version used to create them. For example `1` or `v1`.
 
 ## Participants
 
