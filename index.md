@@ -5,19 +5,19 @@
 layout: home
 ---
 
-<div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-  <div class="col-md-5 p-lg-5 mx-auto">
-    <h1 class="display-4">OpenIndexMaps</h1>
-    <p class="lead">
-      A community and format for sharing <a href="https://en.wikipedia.org/wiki/Index_map">index maps</a>.
-    </p>
-  </div>
+<div class="jumbotron">
+  <h1 class="display-4">OpenIndexMaps</h1>
+  <p class="lead">A community and format for sharing <a href="https://en.wikipedia.org/wiki/Index_map">index maps</a>.</p>
+  <!-- <hr class="my-4">
+  <p>A new GeoJSON-based file specification for standardizing spatial index map creation has been released. For more information see the latest specification documentation.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="/v1" role="button">Latest Specification</a>
+  </p> -->
 </div>
 
-<img src="index_map.jpg" width="240">
+<img src="index_map.jpg" width="240" class="rounded mx-auto d-block">
 
 OpenIndexMaps use the [GeoJSON Format](https://tools.ietf.org/html/rfc7946) to deliver information about an index map that references maps or other index maps. The concept of web-based index maps is not novel, however with many differing implementations, a common community-based standard was needed.
-
 
 # Specification
 
@@ -27,7 +27,6 @@ OpenIndexMaps use the [GeoJSON Format](https://tools.ietf.org/html/rfc7946) to d
 - 3\. Helpful resources
   - 3.1 Converter
   - 3.2 Tutorial
-
 
 ## 1. Introduction
 
@@ -49,26 +48,11 @@ OpenIndexMaps should be valid GeoJSON.
         "coordinates": [
           [
             [
-              [
-                100.0001220703126,
-                20.00012207031252
-              ],
-              [
-                100.0001220703126,
-                22.50012207031252
-              ],
-              [
-                105.0001220703126,
-                22.50012207031252
-              ],
-              [
-                105.0001220703126,
-                20.00012207031252
-              ],
-              [
-                100.0001220703126,
-                20.00012207031252
-              ]
+              [100.0001220703126, 20.00012207031252],
+              [100.0001220703126, 22.50012207031252],
+              [105.0001220703126, 22.50012207031252],
+              [105.0001220703126, 20.00012207031252],
+              [100.0001220703126, 20.00012207031252]
             ]
           ]
         ]
@@ -83,7 +67,7 @@ OpenIndexMaps should be valid GeoJSON.
         "title": "Tōa yochizu -- 東亞輿地圖 -- L-16",
         "note": "This item is really interesting."
       }
-    }...
+    }
   ]
 }
 ```
@@ -113,5 +97,4 @@ A [converter](https://openindexmaps.org/converter) is available for converting s
 
 ### 3.2 Tutorial
 
-A [Creating GeoJSON for OpenIndexMaps](https://kgjenkins.github.io/openindexmaps-workshop/) tutorial was created for a workshop at Geo4LibCamp 2020.  The tutorial works through several examples of using QGIS to create OpenIndexMaps GeoJSON files.
-
+A [Creating GeoJSON for OpenIndexMaps](https://kgjenkins.github.io/openindexmaps-workshop/) tutorial was created for a workshop at Geo4LibCamp 2020. The tutorial works through several examples of using QGIS to create OpenIndexMaps GeoJSON files.
