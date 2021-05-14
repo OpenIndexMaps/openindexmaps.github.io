@@ -8,11 +8,11 @@ layout: home
 <div class="jumbotron">
   <h1 class="display-4">OpenIndexMaps</h1>
   <p class="lead">A community and format for sharing <a href="https://en.wikipedia.org/wiki/Index_map">index maps</a>.</p>
-  <!-- <hr class="my-4">
+  <hr class="my-4">
   <p>A new GeoJSON-based file specification for standardizing spatial index map creation has been released. For more information see the latest specification documentation.</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="/v1" role="button">Latest Specification</a>
-  </p> -->
+    <a class="btn btn-primary btn-lg" href="/specification/1_0_0" role="button">Latest Specification</a>
+  </p>
 </div>
 
 <img src="index_map.jpg" width="240" class="rounded mx-auto d-block">
