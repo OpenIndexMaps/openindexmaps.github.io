@@ -11,7 +11,7 @@ layout: home
   <hr class="my-4">
   <p>A new GeoJSON-based file specification for standardizing spatial index map creation has been released. For more information see the latest specification documentation.</p>
   <p class="lead">
-    <a class="btn btn-primary btn-lg" href="/specification/1_0_0" role="button">Latest Specification</a>
+    <a class="btn btn-primary btn-lg" href="/specification/1.0.0" role="button">Latest Specification</a>
   </p>
 </div>
 
