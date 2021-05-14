@@ -25,7 +25,7 @@ OpenIndexMap is geospatial data format based on the [GeoJSON Format](https://too
 
 OpenIndexMaps should be valid GeoJSON.
 
-## Example
+<!-- ## Example
 
 ```json
 {
@@ -61,7 +61,7 @@ OpenIndexMaps should be valid GeoJSON.
     }
   ]
 }
-```
+``` -->
 
 ## Helpful Resources
 
