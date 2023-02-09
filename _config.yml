@@ -21,3 +21,4 @@ url: "https://openindexmaps.org" # the base hostname & protocol for your site, e
 
 # Build settings
 markdown: kramdown
+theme: minima
