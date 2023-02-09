@@ -19,7 +19,7 @@ fileInput.addEventListener('change', (e) => {
       });
 
       const output = document.getElementById('converted');
-      const formatted = `<pre><code>${JSON.stringify(convertedData, 2)}</code></pre>`;
+      const formatted = `<pre><code>${JSON.stringify(convertedData, null, 2)}</code></pre>`;
       output.innerHTML = formatted;
     });
   };
