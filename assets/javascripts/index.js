@@ -1,12 +1,10 @@
-import shp from 'shpjs';
-import prettyJSONStringify from 'pretty-json-stringify';
-
 const fileInput = document.getElementById('shapefile-file');
 
 fileInput.addEventListener('change', (e) => {
   const reader = new FileReader();
   reader.onload = (event) => {
     shp(event.target.result).then((data) => {
+      console.log(data)
       const convertedData = JSON.parse(JSON.stringify(data));
       convertedData.features = convertedData.features.map((f, i) => {
         // Caution: not a deep copy
@@ -21,7 +19,7 @@ fileInput.addEventListener('change', (e) => {
       });
 
       const output = document.getElementById('converted');
-      const formatted = `<pre><code>${prettyJSONStringify(convertedData)}</code></pre>`;
+      const formatted = `<pre><code>${JSON.stringify(convertedData, null, 2)}</code></pre>`;
       output.innerHTML = formatted;
     });
   };

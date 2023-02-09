@@ -2,8 +2,7 @@
 # Needed for Jekyll
 ---
 
-@import 'variables';
-@import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import "{{ site.theme }}";
 
 h2, h3 {
   margin-top: 1em;
