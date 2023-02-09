@@ -1,6 +1,3 @@
-import shp from 'shpjs';
-import prettyJSONStringify from 'pretty-json-stringify';
-
 const fileInput = document.getElementById('shapefile-file');
 
 fileInput.addEventListener('change', (e) => {
@@ -21,7 +18,7 @@ fileInput.addEventListener('change', (e) => {
       });
 
       const output = document.getElementById('converted');
-      const formatted = `<pre><code>${prettyJSONStringify(convertedData)}</code></pre>`;
+      const formatted = `<pre><code>${JSON.stringify(convertedData, 2)}</code></pre>`;
       output.innerHTML = formatted;
     });
   };
