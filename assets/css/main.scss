@@ -2,7 +2,7 @@
 # Needed for Jekyll
 ---
 
-@import "{{ site.theme }}"
+@import "{{ site.theme }}";
 
 h2, h3 {
   margin-top: 1em;
