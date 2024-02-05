@@ -1,0 +1,353 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "https://openindexmaps.org/openindexmap.schema.json",
+    "title": "OpenIndexMap",
+    "description": "Describes an OpenIndexMap according to specification version 1.0.0.",
+    "type": "object",
+    "properties": {
+        "type": {
+            "enum": [
+                "FeatureCollection"
+            ]
+        },
+        "features": {
+            "type": "array",
+            "items": {
+                "$ref": "#/definitions/sheetOrFrame"
+            }
+        }
+    },
+    "definitions": {
+        "sheetOrFrame": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "Feature"
+                    ]
+                },
+                "geometry": {
+                    "type": "object",
+                    "oneOf": [
+                        {
+                            "$ref": "#/definitions/polygonGeometry"
+                        },
+                        {
+                            "$ref": "#/definitions/multiPolygonGeometry"
+                        },
+                        {
+                            "$ref": "#/definitions/pointGeometry"
+                        },
+                        {
+                            "$ref": "#/definitions/lineStringGeometry"
+                        }
+                    ]
+                },
+                "properties": {
+                    "type": "object",
+                    "properties": {
+                        "label": {
+                            "type": "string",
+                            "description": "Alphanumeric code identifying the sheet or frame. The value of this field is used as a tool tip in GeoBlacklight."
+                        },
+                        "labelAlt": {
+                            "type": "string",
+                            "description": "Alphanumeric code for the sheet or frame that was used for previous or subsequent editions, or for when there are multiple labels."
+                        },
+                        "labelAlt2": {
+                            "type": "string",
+                            "description": "Alphanumeric code for the sheet or frame when there are multiple labels."
+                        },
+                        "datePub": {
+                            "type": "string",
+                            "description": "The date that the sheet or frame was published or made available."
+                        },
+                        "date": {
+                            "type": "string",
+                            "description": "Used when no other date field is relevant."
+                        },
+                        "west": {
+                            "type": "number",
+                            "description": "Farthest west extent of the sheet/frame bounding box (using the Greenwich Meridian)."
+                        },
+                        "east": {
+                            "type": "number",
+                            "description": "Farthest east extent of the sheet/frame bounding box (using the Greenwich Meridian)."
+                        },
+                        "north": {
+                            "type": "number",
+                            "description": "Farthest north extent of the sheet/frame bounding box."
+                        },
+                        "south": {
+                            "type": "number",
+                            "description": "Farthest south extent of the sheet/frame bounding box."
+                        },
+                        "location": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            },
+                            "description": "Geographic place name identifying the area covered by the map sheet or air photo frame."
+                        },
+                        "scale": {
+                            "type": "string",
+                            "description": "Scale statement (representative fraction plus qualifiers) of the individual sheet/frame."
+                        },
+                        "color": {
+                            "type": "string",
+                            "description": "Indicates whether the sheet/frame is color, black and white, color infrared or another color type."
+                        },
+                        "title": {
+                            "type": "string",
+                            "description": "Title of map, usually a geographic location on that sheet."
+                        },
+                        "titleAlt": {
+                            "type": "string",
+                            "description": "Alternate title for the sheet that was used for previous or subsequent editions, or for when there are multiple titles."
+                        },
+                        "dateSurvey": {
+                            "type": "string",
+                            "description": "Date that the map sheet was surveyed."
+                        },
+                        "datePhoto": {
+                            "type": "string",
+                            "description": "Date that the map sheet was photocorrected."
+                        },
+                        "dateReprnt": {
+                            "type": "string",
+                            "description": "Date that the map sheet was reprinted."
+                        },
+                        "overprint": {
+                            "type": "string",
+                            "description": "no description given"
+                        },
+                        "edition": {
+                            "type": "string",
+                            "description": "Statement indicating the edition of the map sheet."
+                        },
+                        "publisher": {
+                            "type": "string",
+                            "description": "Publisher of the individual sheet (can be used if publishers vary within a map set)."
+                        },
+                        "overlays": {
+                            "type": "string",
+                            "description": "no description given"
+                        },
+                        "projection": {
+                            "type": "string",
+                            "description": "The map’s or photo’s projection, coordinate system and datum."
+                        },
+                        "lcCallNo": {
+                            "type": "string",
+                            "description": "Library of Congress call number."
+                        },
+                        "contLines": {
+                            "type": "boolean",
+                            "description": "Indication of whether or not there are contour lines on the map."
+                        },
+                        "contInterv": {
+                            "type": "string",
+                            "description": "Distance between contour lines. Include unit (or abbreviation)."
+                        },
+                        "bathLines": {
+                            "type": "boolean",
+                            "description": "Indication of whether or not there are bathymetric contour lines on the map."
+                        },
+                        "bathInterv": {
+                            "type": "string",
+                            "description": "Distance between bathymetric contour lines. Include unit (or abbreviation)."
+                        },
+                        "primeMer": {
+                            "type": "string",
+                            "description": "Indicates a prime meridian other than Greenwich."
+                        },
+                        "photomos": {
+                            "type": "boolean",
+                            "description": "Indication that the image is a mosaic of several air photos."
+                        },
+                        "bands": {
+                            "type": "string",
+                            "description": "Spectral bands present (near infrared, red, green, blue, etc.)."
+                        },
+                        "rectificn": {
+                            "type": "string",
+                            "description": "Any corrections done to adjust the air photo image."
+                        },
+                        "rollNo": {
+                            "type": "string",
+                            "description": "Identifier for the film reel from which the air photo comes."
+                        },
+                        "inst": {
+                            "type": "string",
+                            "description": "Local institution holding material."
+                        },
+                        "sheetId": {
+                            "type": "string",
+                            "description": "Local institution’s unique identifier for the sheet/frame."
+                        },
+                        "available": {
+                            "type": "boolean",
+                            "description": "Indication if the institution holds the item at this location in any format."
+                        },
+                        "physHold": {
+                            "type": "string",
+                            "description": "Indication if the institution holds the item in a physical format, or a link to information about the physical object."
+                        },
+                        "digHold": {
+                            "type": "string",
+                            "description": "Indication if the institution holds the item in a digital format, or a link to information about the digital object, or a link to the digital object itself."
+                        },
+                        "instCallNo": {
+                            "type": "string",
+                            "description": "Call number used locally (other than Library of Congress call number)."
+                        },
+                        "recId": {
+                            "type": "string",
+                            "description": "Local institution’s unique identifier for the digital object."
+                        },
+                        "download": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Link used to directly download the digital object."
+                        },
+                        "websiteUrl": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Link used to direct users to a website with metadata or a download link for the digital object."
+                        },
+                        "thumbUrl": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Link used to access the thumbnail for the digital object."
+                        },
+                        "iiifUrl": {
+                            "type": "string",
+                            "format": "uri",
+                            "description": "Link used to access the digital image using IIIF."
+                        },
+                        "fileName": {
+                            "type": "string",
+                            "description": "Digital file associated with sheet/frame."
+                        },
+                        "note": {
+                            "type": "string",
+                            "description": "Free text for local comments as well as general notes applying to everyone’s copy."
+                        }
+                    },
+                    "required": [
+                        "label",
+                        "west",
+                        "east",
+                        "north",
+                        "south"
+                    ]
+                }
+            },
+            "required": [
+                "type",
+                "geometry",
+                "properties"
+            ]
+        },
+        "polygonGeometry": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "Polygon"
+                    ]
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "type",
+                "coordinates"
+            ]
+        },
+        "multiPolygonGeometry": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "MultiPolygon"
+                    ]
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "array",
+                                "items": {
+                                    "type": "number"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "required": [
+                "type",
+                "coordinates"
+            ]
+        },
+        "pointGeometry": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "Point"
+                    ]
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "number"
+                    },
+                    "minItems": 2,
+                    "maxItems": 3
+                }
+            },
+            "required": [
+                "type",
+                "coordinates"
+            ]
+        },
+        "lineStringGeometry": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "LineString"
+                    ]
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                }
+            },
+            "required": [
+                "type",
+                "coordinates"
+            ]
+        }
+    }
+}
