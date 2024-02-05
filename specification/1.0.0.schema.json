@@ -40,6 +40,18 @@
                         },
                         {
                             "$ref": "#/definitions/lineStringGeometry"
+                        },
+                        {
+                            "$ref": "#/definitions/multiPointGeometry"
+                        },
+                        {
+                            "$ref": "#/definitions/multiLineStringGeometry"
+                        },
+                        {
+                            "$ref": "#/definitions/multiPolygonGeometry"
+                        },
+                        {
+                            "$ref": "#/definitions/geometryCollection"
                         }
                     ]
                 },
@@ -268,6 +280,13 @@
                             }
                         }
                     }
+                },
+                "bbox": {
+                    "type": "array",
+                    "minItems": 4,
+                    "items": {
+                        "type": "number"
+                    }
                 }
             },
             "required": [
@@ -297,6 +316,13 @@
                             }
                         }
                     }
+                },
+                "bbox": {
+                    "type": "array",
+                    "minItems": 4,
+                    "items": {
+                        "type": "number"
+                    }
                 }
             },
             "required": [
@@ -314,11 +340,17 @@
                 },
                 "coordinates": {
                     "type": "array",
+                    "minItems": 2,
                     "items": {
                         "type": "number"
-                    },
-                    "minItems": 2,
-                    "maxItems": 3
+                    }
+                },
+                "bbox": {
+                    "type": "array",
+                    "minItems": 4,
+                    "items": {
+                        "type": "number"
+                    }
                 }
             },
             "required": [
@@ -342,11 +374,109 @@
                             "type": "number"
                         }
                     }
+                },
+                "bbox": {
+                    "type": "array",
+                    "minItems": 4,
+                    "items": {
+                        "type": "number"
+                    }
                 }
             },
             "required": [
                 "type",
                 "coordinates"
+            ]
+        },
+        "multiPointGeometry": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "MultiPoint"
+                    ]
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "minItems": 2,
+                        "items": {
+                            "type": "number"
+                        }
+                    }
+                },
+                "bbox": {
+                    "type": "array",
+                    "minItems": 4,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            },
+            "required": [
+                "type",
+                "coordinates"
+            ]
+        },
+        "multiLineStringGeometry": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "MultiLineString"
+                    ]
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {
+                        "type": "array",
+                        "items": {
+                            "type": "array",
+                            "items": {
+                                "type": "number"
+                            }
+                        }
+                    }
+                },
+                "bbox": {
+                    "type": "array",
+                    "minItems": 4,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            },
+            "required": [
+                "type",
+                "coordinates"
+            ]
+        },
+        "geometryCollection": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "GeometryCollection"
+                    ]
+                },
+                "geometries": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/sheetOrFrame"
+                    }
+                },
+                "bbox": {
+                    "type": "array",
+                    "minItems": 4,
+                    "items": {
+                        "type": "number"
+                    }
+                }
+            },
+            "required": [
+                "type",
+                "geometries"
             ]
         }
     }
