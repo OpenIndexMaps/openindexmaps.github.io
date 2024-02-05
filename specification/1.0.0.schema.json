@@ -13,13 +13,7 @@
         "features": {
             "type": "array",
             "items": {
-                "$ref": "#/definitions/sheetOrFrame"
-            }
-        }
-    },
-    "definitions": {
-        "sheetOrFrame": {
-            "type": "object",
+                "type": "object",
             "properties": {
                 "type": {
                     "enum": [
@@ -235,6 +229,7 @@
                 "geometry",
                 "properties"
             ]
+            }
         }
     }
 }
