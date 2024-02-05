@@ -30,28 +30,25 @@
                     "type": "object",
                     "oneOf": [
                         {
-                            "$ref": "#/definitions/polygonGeometry"
+                            "$ref": "#/definitions/Polygon"
                         },
                         {
-                            "$ref": "#/definitions/multiPolygonGeometry"
+                            "$ref": "#/definitions/MultiPolygon"
                         },
                         {
-                            "$ref": "#/definitions/pointGeometry"
+                            "$ref": "#/definitions/Point"
                         },
                         {
-                            "$ref": "#/definitions/lineStringGeometry"
+                            "$ref": "#/definitions/LineString"
                         },
                         {
-                            "$ref": "#/definitions/multiPointGeometry"
+                            "$ref": "#/definitions/MultiPoint"
                         },
                         {
-                            "$ref": "#/definitions/multiLineStringGeometry"
+                            "$ref": "#/definitions/MultiLineString"
                         },
                         {
-                            "$ref": "#/definitions/multiPolygonGeometry"
-                        },
-                        {
-                            "$ref": "#/definitions/geometryCollection"
+                            "$ref": "#/definitions/GeometryCollection"
                         }
                     ]
                 },
@@ -261,7 +258,7 @@
                 "properties"
             ]
         },
-        "polygonGeometry": {
+        "Polygon": {
             "type": "object",
             "properties": {
                 "type": {
@@ -294,7 +291,7 @@
                 "coordinates"
             ]
         },
-        "multiPolygonGeometry": {
+        "MultiPolygon": {
             "type": "object",
             "properties": {
                 "type": {
@@ -330,7 +327,7 @@
                 "coordinates"
             ]
         },
-        "pointGeometry": {
+        "Point": {
             "type": "object",
             "properties": {
                 "type": {
@@ -358,7 +355,7 @@
                 "coordinates"
             ]
         },
-        "lineStringGeometry": {
+        "LineString": {
             "type": "object",
             "properties": {
                 "type": {
@@ -388,7 +385,7 @@
                 "coordinates"
             ]
         },
-        "multiPointGeometry": {
+        "MultiPoint": {
             "type": "object",
             "properties": {
                 "type": {
@@ -419,7 +416,7 @@
                 "coordinates"
             ]
         },
-        "multiLineStringGeometry": {
+        "MultiLineString": {
             "type": "object",
             "properties": {
                 "type": {
@@ -452,7 +449,7 @@
                 "coordinates"
             ]
         },
-        "geometryCollection": {
+        "GeometryCollection": {
             "type": "object",
             "properties": {
                 "type": {
