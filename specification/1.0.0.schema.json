@@ -28,7 +28,7 @@
                     "type": "object",
                     "properties": {
                         "label": {
-                            "type": "string",
+                            "type": ["string", "null"],
                             "description": "Alphanumeric code identifying the sheet or frame. The value of this field is used as a tool tip in GeoBlacklight."
                         },
                         "labelAlt": {
@@ -48,19 +48,19 @@
                             "description": "Used when no other date field is relevant."
                         },
                         "west": {
-                            "type": "number",
+                            "type": ["number", "null"],
                             "description": "Farthest west extent of the sheet/frame bounding box (using the Greenwich Meridian)."
                         },
                         "east": {
-                            "type": "number",
+                            "type": ["number", "null"],
                             "description": "Farthest east extent of the sheet/frame bounding box (using the Greenwich Meridian)."
                         },
                         "north": {
-                            "type": "number",
+                            "type": ["number", "null"],
                             "description": "Farthest north extent of the sheet/frame bounding box."
                         },
                         "south": {
-                            "type": "number",
+                            "type": ["number", "null"],
                             "description": "Farthest south extent of the sheet/frame bounding box."
                         },
                         "location": {
@@ -214,14 +214,7 @@
                             "type": ["string", "null"],
                             "description": "Free text for local comments as well as general notes applying to everyone’s copy."
                         }
-                    },
-                    "required": [
-                        "label",
-                        "west",
-                        "east",
-                        "north",
-                        "south"
-                    ]
+                    }
                 }
             },
             "required": [
