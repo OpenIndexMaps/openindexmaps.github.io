@@ -30,10 +30,12 @@
                         "patternProperties": {
                             "^[a-z][a-zA-Z0-9]{0,9}$": {},
                             "^[a-z][a-zA-Z0-9]*[A-Z]{2,}[a-zA-Z0-9]*$": {
-                                "not": {}
+                                "not": {},
+                                "errorMessage": "Property names cannot have two consecutive uppercase letters."
                             },
                             "^.{11,}$": {
-                                "not": {}
+                                "not": {},
+                                "errorMessage": "Property names cannot be longer than 10 characters."
                             }
                         },
                         "properties": {
