@@ -62,6 +62,10 @@ OpenIndexMaps should be valid GeoJSON.
 
 ## Helpful Resources
 
+### JSON Schema
+
+A [JSON Schema file](specification/1.0.0.schema.json) is available for validation.
+
 ### Converter
 
 A [converter](https://openindexmaps.org/converter) is available for converting shapefile index maps to OpenIndexMaps GeoJSON.
