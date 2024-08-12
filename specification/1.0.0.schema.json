@@ -4,6 +4,27 @@
     "title": "OpenIndexMap",
     "description": "Describes an OpenIndexMap according to specification version 1.0.0.",
     "type": "object",
+    "definitions": {
+        "Geometry": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": ["Point", "LineString", "Polygon", "MultiPoint", "MultiLineString", "MultiPolygon", "GeometryCollection"]
+                },
+                "coordinates": {
+                    "type": "array",
+                    "items": {}
+                },
+                "geometries": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/Geometry"
+                    }
+                }
+            },
+            "required": ["type", "coordinates"]
+        }
+    },
     "properties": {
         "type": {
             "enum": [
@@ -22,7 +43,7 @@
                     },
                     "geometry": {
                         "type": "object",
-                        "$ref": "https://geojson.org/schema/Geometry.json"
+                        "$ref": "#/definitions/Geometry"
                     },
                     "properties": {
                         "type": "object",
