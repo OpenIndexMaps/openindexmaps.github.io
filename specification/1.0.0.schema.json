@@ -396,7 +396,6 @@
             }
         }
     },
-    "additionalProperties": true,
     "not": {
         "required": ["properties"]
     }
