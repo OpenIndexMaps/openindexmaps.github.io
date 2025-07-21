@@ -68,7 +68,9 @@ A [converter](https://openindexmaps.org/converter) is available for converting s
 
 ### Tutorial
 
-A [Creating GeoJSON for OpenIndexMaps](https://kgjenkins.github.io/openindexmaps-workshop/) tutorial was created for a workshop at Geo4LibCamp 2020. The tutorial works through several examples of using QGIS to create OpenIndexMaps GeoJSON files.
+A [Creating GeoJSON for OpenIndexMaps](https://kgjenkins.github.io/openindexmaps-workshop/) tutorial was created for a workshop at Geo4LibCamp 2020.
+The tutorial works through several examples of using QGIS to create OpenIndexMaps GeoJSON files.
+An [updated tutorial for version 1.0.0](https://uwm-libraries.github.io/waml-openindexmaps-workshop/) was presented at WAML 2023 and at Geo4LibCamp 2024.
 
 ## Legacy Version
 
