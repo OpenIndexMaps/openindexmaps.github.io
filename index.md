@@ -72,6 +72,6 @@ A [Creating GeoJSON for OpenIndexMaps](https://kgjenkins.github.io/openindexmaps
 The tutorial works through several examples of using QGIS to create OpenIndexMaps GeoJSON files.
 An [updated tutorial for version 1.0.0](https://uwm-libraries.github.io/waml-openindexmaps-workshop/) was presented at WAML 2023 and at Geo4LibCamp 2024.
 
-## Legacy Version
+## Legacy Versions
 
 [OpenIndexMap Version 0](/specification/0.0.0)
